@@ -25,7 +25,7 @@ error_channel_id = -1002268899335
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
-db = client['zsda']
+db = client['zoya']
 users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
